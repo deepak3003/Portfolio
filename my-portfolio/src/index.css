@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #fafbfc;
+  color: #212121;
+}
+
+a {
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #007bfc;
+}
