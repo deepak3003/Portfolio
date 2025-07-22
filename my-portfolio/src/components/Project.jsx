@@ -14,7 +14,7 @@ const projects = [
     description:
       "A simple task management application with HTML, CSS and JavaScript.",
     img: "/todolist.png",
-    live: "https://gregarious-lebkuchen-96260a.netlify.app/day%2010%20to-do%20list/",
+    live: "https://deepak3003.netlify.app/day%2010%20to-do%20list/",
     code: "http://github.com/deepak3003/JavaScript_Project/tree/main/Day%2010%20To-Do%20List",
   },
   // {
