@@ -1,51 +1,74 @@
 import React from "react";
 
 const projects = [
+  // {
+  //   title: "Portfolio Website",
+  //   description:
+  //     "A sleek, responsive website built with React and Tailwind CSS to showcase my work.",
+  //   img: "https://via.placeholder.com/400x200",
+  //   live: "https://your-portfolio-live-link.com",
+  //   code: "https://github.com/yourusername/portfolio",
+  // },
   {
-    title: "Portfolio Website",
+    title: "Todo List",
     description:
-      "A sleek, responsive website built with React and Tailwind CSS to showcase my work.",
-    img: "https://via.placeholder.com/400x200", // Replace with project image or remove this line
-    link: "https://your-portfolio-link.com",
+      "A simple task management application with HTML, CSS and JavaScript.",
+    img: "/todolist.png",
+    live: "https://gregarious-lebkuchen-96260a.netlify.app/day%2010%20to-do%20list/",
+    code: "http://github.com/deepak3003/JavaScript_Project/tree/main/Day%2010%20To-Do%20List",
   },
-  {
-    title: "Todo App",
-    description:
-      "A simple task management app with React hooks and local storage.",
-    img: "https://via.placeholder.com/400x200",
-    link: "https://your-todoapp-link.com",
-  },
-  // Add more projects as needed
+  // {
+  //   title: "Weather App",
+  //   description:
+  //     "A weather forecasting app using OpenWeatherMap API and React.",
+  //   img: "https://via.placeholder.com/400x200",
+  //   live: "https://your-weatherapp-live-link.com",
+  //   code: "https://github.com/yourusername/weather-app",
+  // },
 ];
 
 function Projects() {
   return (
     <section id="projects" className="py-16 px-6 bg-gray-100">
       <div className="max-w-5xl mx-auto">
-        <h3 className="text-2xl font-bold mb-10 text-center text-gray-800">
+        <h3 className="text-3xl font-bold mb-12 text-center text-gray-800">
           Projects
         </h3>
+
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg shadow hover:shadow-md transition p-6 flex flex-col items-center"
+              className="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col"
             >
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-32 object-cover mb-4 rounded"
+                className="w-full h-40 object-cover rounded mb-4"
               />
-              <h4 className="text-xl font-semibold mb-2">{project.title}</h4>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-              >
-                View Project
-              </a>
+              <h4 className="text-xl font-semibold mb-2 text-gray-800">
+                {project.title}
+              </h4>
+              <p className="text-gray-600 mb-6">{project.description}</p>
+
+              <div className="mt-auto flex flex-col sm:flex-row gap-3">
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-center px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition w-full"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition w-full"
+                >
+                  View Code
+                </a>
+              </div>
             </div>
           ))}
         </div>
