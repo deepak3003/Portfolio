@@ -1,14 +1,14 @@
 import React from "react";
 
 const projects = [
-  // {
-  //   title: "Portfolio Website",
-  //   description:
-  //     "A sleek, responsive website built with React and Tailwind CSS to showcase my work.",
-  //   img: "https://via.placeholder.com/400x200",
-  //   live: "https://your-portfolio-live-link.com",
-  //   code: "https://github.com/yourusername/portfolio",
-  // },
+  {
+    title: "Real Time Chat",
+    description:
+      "A fully functional real-time chat application built using Spring Boot, WebSocket, and STOMP protocol.",
+    img: "RealTimeChat.png",
+    live: "https://real-time-chat-wt3s.onrender.com/",
+    code: "https://github.com/deepak3003/Real-Time_Chat",
+  },
   {
     title: "Todo List",
     description:

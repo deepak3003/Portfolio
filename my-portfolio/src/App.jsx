@@ -7,7 +7,7 @@ import About from './components/About'
 import Project from './components/Project'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Skill from './components/Skill'
+// import Skill from './components/Skill'
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   <Header></Header>
   <Hero></Hero>
   <About></About>
-  <Skill></Skill>
+  {/* <Skill></Skill> */}
   <Project></Project>
   <Contact></Contact>
   <Footer/>
