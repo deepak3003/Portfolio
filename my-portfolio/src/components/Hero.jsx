@@ -31,7 +31,7 @@ function Hero() {
         {/* Call-to-Action Buttons */}
         <div className="flex justify-center gap-4 flex-wrap">
           <a
-            href="/Resume.pdf"
+            href="/DeepakResume.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
