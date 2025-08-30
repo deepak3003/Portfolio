@@ -17,14 +17,13 @@ const projects = [
     live: "https://deepak3003.netlify.app/day%2010%20to-do%20list/",
     code: "http://github.com/deepak3003/JavaScript_Project/tree/main/Day%2010%20To-Do%20List",
   },
-  // {
-  //   title: "Weather App",
-  //   description:
-  //     "A weather forecasting app using OpenWeatherMap API and React.",
-  //   img: "https://via.placeholder.com/400x200",
-  //   live: "https://your-weatherapp-live-link.com",
-  //   code: "https://github.com/yourusername/weather-app",
-  // },
+  {
+    title: "Medical Chatbot",
+    description:
+      "A medical chatbot that uses NLP to answer health-related queries and assist users with quick, reliable medical information.",
+    img: "/medibot.png",
+    code: "https://github.com/deepak3003/Medical_Chatbot",
+  },
 ];
 
 function Projects() {
@@ -52,14 +51,16 @@ function Projects() {
               <p className="text-gray-600 mb-6">{project.description}</p>
 
               <div className="mt-auto flex flex-col sm:flex-row gap-3">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-center px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition w-full"
-                >
-                  Live Demo
-                </a>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-center px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition w-full"
+                  >
+                    Live Demo
+                  </a>
+                )}
                 <a
                   href={project.code}
                   target="_blank"
