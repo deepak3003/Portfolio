@@ -28,27 +28,36 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="py-16 px-6 bg-gray-100">
-      <div className="max-w-5xl mx-auto">
-        <h3 className="text-3xl font-bold mb-12 text-center text-gray-800">
-          Projects
-        </h3>
-
+    <section
+      id="projects"
+      className="py-16 px-6 bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100"
+    >
+      <div className="max-w-5xl mx-auto text-center">
+        
+        <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white tracking-tight mb-14">
+          <span className="text-blue-600 dark:text-blue-400">Projects</span>
+        </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col"
+              className="
+                bg-white dark:bg-zinc-800
+                rounded-lg shadow hover:shadow-lg transition
+                p-6 flex flex-col
+              "
             >
               <img
                 src={project.img}
                 alt={project.title}
                 className="w-full h-40 object-cover rounded mb-4"
               />
-              <h4 className="text-xl font-semibold mb-2 text-gray-800">
+              <h4 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">
                 {project.title}
               </h4>
-              <p className="text-gray-600 mb-6">{project.description}</p>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {project.description}
+              </p>
 
               <div className="mt-auto flex flex-col sm:flex-row gap-3">
                 {project.live && (
@@ -56,7 +65,11 @@ function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-center px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition w-full"
+                    className="
+                      inline-block text-center px-4 py-2
+                      bg-green-600 text-white rounded
+                      hover:bg-green-700 dark:hover:bg-green-500 transition w-full
+                    "
                   >
                     Live Demo
                   </a>
@@ -65,7 +78,11 @@ function Projects() {
                   href={project.code}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition w-full"
+                  className="
+                    inline-block text-center px-4 py-2
+                    bg-blue-600 text-white rounded
+                    hover:bg-blue-700 dark:hover:bg-blue-500 transition w-full
+                  "
                 >
                   View Code
                 </a>
