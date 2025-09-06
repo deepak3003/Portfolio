@@ -11,20 +11,19 @@ export default function Experience() {
         "Built and deployed a Medical Chatbot using NLP techniques",
       ],
     },
-    
-    // You can add more entries here
+    // add more experiences as needed
   ];
 
   return (
     <section id="experience" className="py-20 bg-gray-50 dark:bg-zinc-900">
-      {/* Section Heading */}
+      {/* Heading */}
       <h2 className="text-4xl font-extrabold text-center mb-14 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
         Experience
       </h2>
 
       <div className="relative max-w-5xl mx-auto">
-        {/* Central timeline line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 h-full" />
+        {/* Center line visible only on md+ */}
+        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 h-full" />
 
         {items.map((exp, idx) => (
           <motion.div
@@ -32,15 +31,17 @@ export default function Experience() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: idx * 0.15 }}
-            className={`relative mb-12 w-full flex ${
-              idx % 2 === 0 ? "justify-start pr-10" : "justify-end pl-10"
+            className={`relative mb-12 flex flex-col md:flex-row ${
+              idx % 2 === 0
+                ? "md:justify-start md:pr-10"
+                : "md:justify-end md:pl-10"
             }`}
           >
-            {/* Timeline Dot */}
-            <span className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-white border-4 border-blue-500 dark:bg-zinc-900 dark:border-purple-500 z-10 shadow" />
+            {/* Timeline dot (md+) */}
+            <span className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-full bg-white border-4 border-blue-500 dark:bg-zinc-900 dark:border-purple-500 z-10 shadow" />
 
             {/* Card */}
-            <div className="bg-white dark:bg-zinc-800 w-5/12 rounded-2xl shadow-md hover:shadow-2xl p-6 border border-gray-100 dark:border-zinc-700">
+            <div className="bg-white dark:bg-zinc-800 w-full md:w-5/12 rounded-2xl shadow-md hover:shadow-2xl p-6 border border-gray-100 dark:border-zinc-700">
               <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400">
                 {exp.role}
               </h3>
