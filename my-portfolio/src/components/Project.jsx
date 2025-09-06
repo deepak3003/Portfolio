@@ -26,6 +26,13 @@ const projects = [
     img: "/medibot.png",
     code: "https://github.com/deepak3003/Medical_Chatbot",
   },
+  {
+    title: "File Hider",
+    description:
+      "The File Hider is a simple Java-based utility that allows users to hide and unhide files.",
+    img: "/FileHider.png",
+    code: "https://github.com/deepak3003/File_Hider",
+  },
 ];
 
 function Projects() {

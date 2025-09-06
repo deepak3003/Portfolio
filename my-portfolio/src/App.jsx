@@ -9,6 +9,9 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Skills from './components/Skills'
+import Achievements from './components/Achievements'
+import Experience from './components/Experience'
+import Training from './components/Training'
 
 
 function App() {
@@ -20,8 +23,11 @@ function App() {
   {/* <Header></Header> */}
   <Hero></Hero>
   <About></About>
-  <Skills></Skills>
   <Project></Project>
+  <Skills></Skills>
+  <Experience></Experience>
+  <Achievements></Achievements>
+  <Training></Training>
   <Contact></Contact>
   <Footer/>
   </>

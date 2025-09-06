@@ -13,8 +13,11 @@ const Navbar = () => {
   const navItems = [
     "home",
     "about",
-    "skills",
     "projects",
+    "skills",
+    "experience",
+    "achievements",
+    "training",
     
     "contact",
   ];
