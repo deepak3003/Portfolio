@@ -46,27 +46,33 @@ const About = () => {
             About Me
           </h2>
           <p className="text-base sm:text-lg text-gray-700 dark:text-white/80 leading-relaxed">
-            I'm{" "}
+            Hi there! I'm{" "}
             <span className="font-semibold text-blue-700 dark:text-blue-400">
               Deepak Singh
             </span>
-            , an aspiring{" "}
+            , a Full Stack Developer from Gorakhpur, Uttar Pradesh.
+          </p>
+          <p className="text-base sm:text-lg text-gray-700 dark:text-white/80 leading-relaxed">
+            I specialize in Java, JavaScript, React, Node.js, and SQL/NoSQL,
+            building responsive, scalable, and user-focused web applications.
+          </p>
+          <p className="text-base sm:text-lg text-gray-700 dark:text-white/80 leading-relaxed">
+            Currently pursuing{" "}
             <span className="font-semibold text-blue-700 dark:text-blue-400">
-              CSE Engineer & Full Stack Developer
+              B.Tech
             </span>{" "}
-            based in Gorakhpur, Uttar Pradesh.
+            in Computer Science and Engineering at Dr. A.P.J. Abdul Kalam
+            Technical University, I enjoy transforming ideas into efficient,
+            scalable solutions.
           </p>
           <p className="text-base sm:text-lg text-gray-700 dark:text-white/80 leading-relaxed">
-            Currently pursuing B.Tech at Dr. A.P.J. Abdul Kalam Technical
-            University, I enjoy transforming ideas into efficient, scalable
-            solutions.
-          </p>
-          <p className="text-base sm:text-lg text-gray-700 dark:text-white/80 leading-relaxed">
-            Passionate about{" "}
+            My goal is to write{" "}
             <span className="font-semibold text-blue-700 dark:text-blue-400">
-              problem solving, teamwork, and creativity
-            </span>
-            —I thrive on building real-world projects that make an impact.
+              clean, efficient, and scalable
+            </span>{" "}
+            code. I enjoy breaking down complex problems into modular,
+            maintainable solutions while keeping performance and UI smooth and
+            intuitive.
           </p>
           <div className="flex justify-center md:justify-start gap-4 pt-4">
             <a
